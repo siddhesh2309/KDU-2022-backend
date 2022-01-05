@@ -2,14 +2,15 @@ import java.util.Scanner;
 public class S3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        findEvenOdd();
+        int N = sc.nextInt();
+        sumOfDigits(N);
     }
-    public static void findEvenOdd() {
-        int N = 1000;
-        for(int i = 1; i < N; i++) {
-            if(i % 3 == 0)
-                System.out.print(i + " ");
+    public static void sumOfDigits(int N) {
+        int sum = 0;
+        while(N > 0) {
+            sum += N%10;
+            N /= 10;
         }
-        System.out.println();
+        System.out.println(sum);
     }
 }
