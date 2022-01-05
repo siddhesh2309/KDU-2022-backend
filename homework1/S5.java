@@ -5,11 +5,11 @@ public class S5 {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-        boolean flag = Palindrome(s);
+        boolean flag = isPalindrome(s);
         if(flag) System.out.println("Palindrome");
         else System.out.println("Not Palindrome");
     }
-    static boolean Palindrome(String s) {
+    static boolean isPalindrome(String s) {
         int len = s.length();
         int i = 0, j = len-1;
         while(i < j) {
