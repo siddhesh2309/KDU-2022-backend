@@ -1,6 +1,5 @@
-/.idea
-/out
 /KDU-2022-backend.iml
-/test.txt
 /README.md
-
+/test.txt
+/out
+.idea/
