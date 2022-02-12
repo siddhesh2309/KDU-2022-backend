@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demoApplication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dvdrental
+    username: master
+    password: Vivek09e@
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    jpa:
+      hibernate:
+        ddl-auto=create: none
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
